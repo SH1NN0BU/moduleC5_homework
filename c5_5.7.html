@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <script src="c5_5.7.js"></script>
     <title>Практическое задание C5 5.7 (HW-03)</title>
 </head>
 <body>
@@ -25,5 +24,23 @@
     <p><strong>Пример:</strong> если пользователь ввёл 5 и 7, то запрос будет <a href="https://picsum.photos/v2/list?page=5&limit=7"></a>вида.</p>
     <p>После получения данных вывести список картинок на экран.</p>
     <p>Если пользователь перезагрузил страницу, то ему должны показываться картинки из последнего успешно выполненного запроса (использовать localStorage).</p>
+    <h1>Решение</h1>
+    <div>
+        <lable>Номер страницы
+            <input type="number" class="input-field input-page" min="1" max="10" value="1">
+        </lable>
+        
+        <lable>Лимит
+            <input type="number" class="input-field input-limit" min="1" max="10" value="1">
+        </lable>
+        
+        <button>запрос</button>
+        <button>Удалить</button>
+
+        <div>Результат</div>
+
+    </div>
+
+    <script src="c5_5.7.js"></script>
 </body>
 </html>
