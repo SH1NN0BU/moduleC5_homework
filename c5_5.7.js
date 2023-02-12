@@ -56,4 +56,18 @@ function displayResult(data) {
       result_node.innerHTML = cards;
   };
 
-  
+  function runRequest(page, limit){
+    if((page < 1 || page > 10) && (limit < 1 || limit > 10))
+    {
+      console.log("Page and Limit are out of range [1..10]")  
+    } else if(page < 1 || page > 10)
+    {
+      console.log("Page is out of range [1..10]")  
+    } else if(limit < 1 || limit > 10)
+    {
+      console.log("Limit is out of range [1..10]")  
+    } else{
+      let res = useRequest(page, limit);
+    }
+}
+
