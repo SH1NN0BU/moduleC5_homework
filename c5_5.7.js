@@ -71,3 +71,16 @@ function displayResult(data) {
     }
 }
 
+btn_node.addEventListener('click', () => {
+    p = Number(page_node.value);
+    l = Number(limit_node.value);
+          
+    runRequest(p, l)
+  });
+
+btn_clear_node.addEventListener('click', () => {
+    localStorage.clear();
+    page_node.value = 1
+    limit_node.value = 1
+    result_node.innerHTML = "Results will be here"
+  });
