@@ -36,3 +36,24 @@ function useRequest(p,l) {
     .catch(() => { console.log('fetch error') });
 };
 
+function displayResult(data) {
+
+    let cards = '';
+  
+    data.forEach(item => {
+          const cardBlock = `
+          <div class="card">
+              <img
+              src="${item.download_url}"
+              class="card-image"
+              />
+              <p>${item.author}</p>
+          </div>
+          `;
+          cards = cards + cardBlock;
+      });
+  
+      result_node.innerHTML = cards;
+  };
+
+  
