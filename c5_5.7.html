@@ -25,7 +25,7 @@
     <p>После получения данных вывести список картинок на экран.</p>
     <p>Если пользователь перезагрузил страницу, то ему должны показываться картинки из последнего успешно выполненного запроса (использовать localStorage).</p>
     <h1>Решение</h1>
-    <div>
+    <div class="input_wrap">
         <lable>Номер страницы
             <input type="number" class="input-field input-page" min="1" max="10" value="1">
         </lable>
@@ -34,10 +34,10 @@
             <input type="number" class="input-field input-limit" min="1" max="10" value="1">
         </lable>
         
-        <button>запрос</button>
-        <button>Удалить</button>
+        <button class="btn btn-request">запрос</button>
+        <button class="btn btn-clear">Удалить</button>
 
-        <div>Результат</div>
+        <div class="result">Результат</div>
 
     </div>
 
